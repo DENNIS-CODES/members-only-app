@@ -1,6 +1,7 @@
 {
   "name": "members-only-app",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -18,5 +19,8 @@
   "homepage": "https://github.com/DENNIS-CODES/members-only-app#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
