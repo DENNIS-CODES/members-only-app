@@ -1,0 +1,22 @@
+{
+  "name": "members-only-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DENNIS-CODES/members-only-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DENNIS-CODES/members-only-app/issues"
+  },
+  "homepage": "https://github.com/DENNIS-CODES/members-only-app#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
