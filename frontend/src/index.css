@@ -34,7 +34,7 @@ code {
 }
 
 .footer {
-  grid-area: footer;
+  grid-area: footer:
   background-color: #2030040;
   color: #ffffff;
   display: flex;
