@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SigninScreen(props) {
+function SigninDisplay(props) {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const userSignin = useSelector(state => state.userSignin);
@@ -20,4 +20,40 @@ function SigninScreen(props) {
         dispatch(signin(email, password));
     }
 
+    return <div classname="form">
+        <form onSubmit={submitHandler} >
+            <ul className="form-conatiner">
+                <li>
+                    <h2>Sign-In</h2>
+                </li>
+                <li>
+                    {loading && <div>Loading...</div>}
+                    {error && <div>{error}</div>}
+                </li>
+                <li>
+                    <label htmlfor="email">
+                        Email
+                </label>
+                    <input type="email" name="email" id="email" onCharge={(e) => setEmail(e.target.value)}>
+                    </input>
+                </li>
+                <li>
+                    <label htmlfor="password">Password</label>
+                    <input type="password" id="password" name="password" onChange={(e) => setPassword(e.target.value)}>
+                    </input>
+                </li>
+                <li>
+                    <button type="submit" className="button-primary">Signin</button>
+                </li>
+                <li>
+                    Sign In To Members to View Posts
+                </li>
+                <li>
+                    <Link to={redirect === "/" ? "register" : "register?redirect=" + redirect} className="button secondary text-center" >Create your La-drink account</Link>
+                </li>
+            </ul>
+        </form>
+    </div>
+
 }
+export default SigninDisplay;
