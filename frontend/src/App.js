@@ -1,6 +1,7 @@
 import './App.css';
 import './index.css';
 import SigninDisplay from './display/signindisplay';
+import RegisterDisplay from './display/RegisterDisplay';
 function App() {
   return (
     <div className="App">
@@ -21,6 +22,7 @@ function App() {
         </div>
       </header>
       <div className="content">
+      <Route path= "/register"  component={RegisterDisplay}></Route>
       <Route path= "/signin"  component={SigninDisplay}></Route>
       </div>
       <footer className="footer">All right reserved</footer>
