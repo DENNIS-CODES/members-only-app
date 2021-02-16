@@ -33,14 +33,7 @@ code {
  color: #f8f8f8;
 }
 
-.footer {
-  grid-area: footer:
-  background-color: #2030040;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 a { 
   text-decoration: none;

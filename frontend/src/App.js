@@ -1,5 +1,6 @@
 import './App.css';
 import './index.css';
+import SigninDisplay from './display/signindisplay';
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,9 @@ function App() {
         </div>
         </div>
       </header>
+      <div className="content">
+      <Route path= "/signin"  component={SigninDisplay}></Route>
+      </div>
       <footer className="footer">All right reserved</footer>
     </div>
   );

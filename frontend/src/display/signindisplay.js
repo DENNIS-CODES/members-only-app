@@ -24,7 +24,7 @@ function SigninDisplay(props) {
         <form onSubmit={submitHandler} >
             <ul className="form-conatiner">
                 <li>
-                    <h2>Sign-In</h2>
+                    <Link to="/SignIn">Sign in</Link>
                 </li>
                 <li>
                     {loading && <div>Loading...</div>}
