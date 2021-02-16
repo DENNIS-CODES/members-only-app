@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import { useSelector, useDispatch } from 'react-redux';
+import { register } from '../actions/userAction';
 
 function RegisterDisplay(props) {
     const [name, setName] = useState('');
